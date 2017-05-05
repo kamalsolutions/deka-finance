@@ -12,8 +12,27 @@ gulp.task("compileSass",function(){
 
 })
 
+gulp.task("concatScript",function(){
+        return gulp.src([
+                "assets/js/jquery-2.1.4.min.js",
+                "assets/js/bootstrap.min.js",
+                "assets/js/custom.js",
+                "assets/js/smoothscroll.js",
+            ])
+            .pipe(concat("app.js"))
+            .pipe(gulp.dest("public/js"))
+})
+
+gulp.task("minifyScript",function(){
+    return gulp.src("public/js/app.js")
+        .pipe(uglify())
+        .pipe(rename("app.min.js"))
+        .pipe(gulp.dest("public/js"))
+
+})
+
 gulp.task("watchSass",function(){
-    gulp.watch(["assets/**/*.sass","assets/**/*.scss"],["compileSass"])
+    gulp.watch(["assets/**/*.sass","assets/**/*.scss"],["compileSass","concatStyle"])
 })
 
 gulp.task("concatStyle",["compileSass"],function(){
@@ -26,4 +45,4 @@ gulp.task("concatStyle",["compileSass"],function(){
     .pipe(gulp.dest("public/css"))
 })
 
-gulp.task("build",["concatStyle"],function(){})
+gulp.task("build",["concatStyle","concatScript","minifyScript"],function(){})
