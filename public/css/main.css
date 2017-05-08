@@ -200,10 +200,14 @@ body {
   overflow-x: hidden; }
 
 .coming-soon {
-  color: #fff;
+  color: #52bab3;
   margin-top: 20%; }
   .coming-soon h3 {
-    font-size: 3.2em; }
+    font-size: 3.2em;
+    color: #85144B; }
+  .coming-soon h5 {
+    color: #fff;
+    font-size: 1.25em; }
   .coming-soon a {
     color: #F3BB45;
     font-size: 1.25em;
@@ -224,7 +228,7 @@ a {
     text-decoration: none; }
 
 #home_container {
-  background: url("../../img/home-bg.jpg") 50% 0 repeat-y fixed;
+  background: url("../../img/chair.png") 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   height: 100vh; }
