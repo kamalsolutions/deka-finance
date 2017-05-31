@@ -8,6 +8,7 @@
 
 /uploads/**
 /assets/**
+/.vs/**
 
 ### Sass ###
 .sass-cache/**
