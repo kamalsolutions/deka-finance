@@ -193,7 +193,7 @@ th {
   padding: 0; }
 
 body {
-  font-family: 'Oxygen','Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: 400;
   width: 100%;
   position: relative;
@@ -322,6 +322,18 @@ a {
   .jumbo_about .jumbo-text {
     color: #111; }
 
+.jumbo_contact {
+  background: url("../../img/deka-bg-5.png");
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+  text-shadow: 3px 4px 5px #111;
+  font-weight: bolder; }
+  .jumbo_contact .jumbo-title {
+    color: #fff; }
+  .jumbo_contact .jumbo-text {
+    color: #fff; }
+
 #contact {
   padding-top: 120px;
   padding-bottom: 120px; }
@@ -356,12 +368,17 @@ a {
   background: #ffffff;
   color: #551A8B; }
 
+.contact_session li {
+  margin-top: 3%; }
+
 .footer {
   background: #283A44;
   color: #fff;
   padding: 1%;
   border-radius: 6px;
   margin-top: 3%; }
+  .footer li {
+    margin-bottom: 2%; }
 
 .services_section .thumbnail {
   height: 150px;
