@@ -235,24 +235,26 @@ a {
     text-decoration: none; }
 
 .page-header {
-  border-bottom: 2px solid #3966AA; }
+  border-bottom: 2px solid #00bbb8; }
 
 /* navigation styles*/
 .navbar-default {
-  background: #3966AA;
+  background: #00bbb8;
   border: none;
   margin: 0 !important;
-  color: #fff; }
+  color: #111; }
 
 .navbar-default .navbar-brand {
   color: #fff;
   font-size: 26px;
   font-weight: bold;
   line-height: 40px;
-  margin: 0; }
+  margin: 0;
+  z-index: 99999999;
+  position: relative; }
 
 .navbar-default .navbar-brand:hover {
-  color: #fafafa; }
+  color: #111; }
 
 .navbar-default li {
   margin: 15px 20px; }
@@ -263,11 +265,10 @@ a {
   font-weight: 700;
   letter-spacing: 0.6px;
   line-height: 45px;
-  padding: 0;
-  transition: all 0.4s ease-in-out; }
+  padding: 0; }
 
 .navbar-default .navbar-nav > li a:hover {
-  color: #63c6ae !important; }
+  color: #111 !important; }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -277,20 +278,19 @@ a {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #63c6ae;
+  color: #fff;
   background-color: transparent; }
 
 .navbar-default .navbar-toggle {
-  border: 2px solid #63c6ae !important;
+  border: 2px solid #fff !important;
   padding-top: 10px; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background: #63c6ae;
+  background: #fff;
   border-color: transparent; }
 
 .navbar-default .navbar-nav > li a:hover {
-  color: #fff !important;
-  border: 2px solid #63c6ae;
+  color: #111 !important;
   padding: 1%; }
 
 .navbar-default .navbar-toggle:hover,
@@ -380,11 +380,17 @@ a {
   margin-top: 3%; }
 
 .footer {
-  background: #283A44;
+  background: #00bbb8;
   color: #fff;
   padding: 1%;
   border-radius: 6px;
   margin-top: 3%; }
+  .footer a {
+    color: #fff;
+    font-size: 18px; }
+    .footer a:hover {
+      font-style: italic;
+      transition: all 0.4s ease-in-out; }
   .footer li {
     margin-bottom: 2%; }
 
