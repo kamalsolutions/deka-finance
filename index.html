@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Deka Finance</title>
+        <title>Deka Finance | Welcome</title>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="public/css/main.css">
         <link rel="stylesheet" href="public/css/font-awesome.min.css" />
@@ -11,13 +11,16 @@
     </head>
     <body id="home_container" class="">
     <section class="wrapper">
-    <section class="row">
+    <section class="row" style="margin-top: 3%">
       <section class="container">
-        <ul class="list-inline" style="padding:1%">
-          <li><span class="fa fa-envelope"></span>&nbsp;info@dekafinance.com</li>
+        <ul class="list-inline navbar-left" style="padding:1%">
+          <!-- <li><span class="fa fa-envelope"></span>&nbsp;info@dekafinance.com</li> -->
           <li><span class="fa fa-phone"></span>&nbsp; +233 24 227 4351</li>
           <!-- <li><span class="fa fa-map-marker"></span>&nbsp;Kanda</li> -->
           <!-- <li><span class="fa"></span></li> -->
+        </ul>
+        <ul class="navbar-right list-inline">
+              <li> <a href="contact.html" class="btn btn-focus-2 navbar-button" style="background:#3D4044;margin-bottom:3px;color: #fafafa"> Call us <span class="fa fa-caret-right"></span></a> </li>
         </ul>
       </section>
     </section>
@@ -45,6 +48,7 @@
                     <li><a href="user-account.php">My Account</a></li>
                     <li><a href="logout.php">Logout</a></li>
                       </ul> </li>  -->
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="services.html">Our Business</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
@@ -60,18 +64,19 @@
     ====================== -->
     <section class="row">
       <section class="container">
-        <section class="jumbotron jumbo_home">
-            <h3 class="jumbo-title"> Trusted Financial Services</h3>
-            <p class="jumbo-text xs-small">
-              Providing Bespoke Finance
+        <section class="jumbotron jumbo_home col-md-12">
+            <h3 class="jumbo-title col-md-12"> Welcome to DEKA FINANCE</h3>
+            <section class="col-md-6">
+              <p class="jumbo-text col-md-12" style="background: #00bbb8;color: #fff;padding:2%">
+              Deka Finance is the new standard in the financial services industry with the sole aim of employing relevant technology & innovation all in a bit to providing bespoke & timely financial assistance to our clients and create value for stakeholders.
             </p>
-            <p>
-              <ul class="list-inline">
-                <li> <a href="services.html" class="btn btn-focus-1" style="background: #00bbb8;color: #fafafa"> Our Services <span class="fa fa-caret-right"></span></a> </li>
-                <li> <a href="contact.html" class="btn btn-focus-2" style="background:#3D4044;color: #fafafa"> Contact Us Today <span class="fa fa-caret-right"></span></a> </li>
+            
+            <ul class="list-inline col-md-12">
+                <li> <a href="services.html" class="btn btn-focus-1" style="background: #00bbb8;margin-bottom:3px;color: #fafafa"> Our Services <span class="fa fa-caret-right"></span></a> </li>
+                <!-- <li> <a href="contact.html" class="btn btn-focus-2" style="background:#3D4044;margin-bottom:3px;color: #fafafa"> Call us <span class="fa fa-caret-right"></span></a> </li> -->
                 <li></li>
               </ul>
-            </p>
+            </section>
         </section>
       </section>
     </section>
@@ -82,6 +87,9 @@
         <section class="col-md-12">
           <section class="col-md-6">
               <h3 class="section_title page-header">About Us</h3>
+<!-- 
+              <h4 style="background: #00bbb8;color: #fafafa; padding:2%">Executive Summary</h4>
+ -->
               <p>
                DEKA Financial Services, LLC was incorporated on August 2016 to provide a suit of financial products to meet the diverse needs of its clients. It has a core mandate of providing investment opportunities for high net worth individuals and business loans to potent and viable SMEs.
                 </p>
@@ -89,12 +97,22 @@
           </section>
           <section class="col-md-6">
               <h3 class="section_title page-header">Our Business</h3>
-              <ul class="services_intro" style="font-size:large">
-                <li><span class="fa fa-angle-double-right"></span>&nbsp;Investment </li>
-                <li><span class="fa fa-angle-double-right"></span>&nbsp;Trade Finance</li>
-                <li><span class="fa fa-angle-double-right"></span>&nbsp;Business Loans</li>
-                <li><span class="fa fa-angle-double-right"></span>&nbsp;Business Advisory Services</li>
-                <li><a href="services.html" class="btn" style="background: #00bbb8;color: #fafafa">More Services <span class="fa fa-caret-right"></span></a></li>
+              <ul class="services_intro" style="font-size:16px">
+                <li class="give-mb"><span class="fa fa-angle-double-right"></span>&nbsp;Investment 
+                          <ul>
+                            <li><span class="fa fa-angle-right"></span>&nbsp;DEK T-Bill Plus</li>
+                            <li><span class="fa fa-angle-right"></span>&nbsp;DEK Plus</li>
+                          </ul>
+                </li>
+                <li class="give-mb"><span class="fa fa-angle-double-right"></span>&nbsp;Trade Finance</li>
+                <li class="give-mb"><span class="fa fa-angle-double-right"></span>&nbsp;Business Loans</li>
+                <li class="give-mb"><span class="fa fa-angle-double-right"></span>&nbsp;Financial Advisory Services
+                    <ul>
+                            <li><span class="fa fa-angle-right"></span>&nbsp;Business advisory services</li>
+                            <li><span class="fa fa-angle-right"></span>&nbsp;Personal financial advice</li>
+                          </ul>
+                </li>
+                <li class="give-mb"><a href="services.html" class="btn" style="background: #00bbb8;color: #fafafa">More Services <span class="fa fa-caret-right"></span></a></li>
 
               </ul>
 
@@ -126,11 +144,10 @@
               </ul>
           </section>
           <section class="col-md-3">
-            <ul class="">
-             <li style="border-bottom:2px dashed #fff">We're Social</li>
-              <li><span class="fa fa-facebook"></span> /dekafinance</li>
-              <li><span class="fa fa-twitter"></span> @dekafinance</li>
-              <li><span class="fa fa-instagram"></span> /dekafinance</li>
+            <ul class="list-inline">
+           <li> <a href="https://www.facebook.com/dekamoney/?hc_ref=ARTefwENqpASoxI56X2Q0wNAuGTHqmCro-Q4B9KzmTbHYIO9fkmLawPij--I9DMAyl4" target="_blank"><span class="fa fa-facebook fa-2x"></span></a></li>
+              <li><span class="fa fa-twitter fa-2x"></span></li>
+              <li><span class="fa fa-instagram fa-2x"></span></li>
             </ul>
           </section>
         </section>
